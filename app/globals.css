@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #f5f5f5;
+  --bg-card: #ffffff;
+  --border-soft: #e7e7e7;
+  --text-main: #1f1f1f;
+  --text-muted: #6b6b6b;
+  --brand: #bf2c24;
+}
+
+@theme inline {
+  --color-background: var(--bg-page);
+  --color-foreground: var(--text-main);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-family:
+    "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #ffe5db;
+  color: #2b2b2b;
+}
+
+.clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.reading-paragraph {
+  margin: 0 0 1.1em;
+  text-indent: 2em;
+  letter-spacing: 0.01em;
+}
